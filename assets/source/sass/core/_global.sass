@@ -1,0 +1,98 @@
+
+/* ==|== global ======================================== */  
+
+// global page settings
+
+.wrapper
+  display: block
+  max-width: 700px
+  margin: 2em auto
+
+
+header
+  width: 100%
+  max-width: 700px
+  margin: 0 auto
+
+  h1
+    display: block
+    text-transform: none 
+    color: $blue
+    text-align: center
+
+
+.main
+  width: 100%
+
+  .donation-block
+    background: $white
+    padding: 38px 48px
+
+  .donation-block__copy
+    padding: 30px 42px
+    margin-bottom: 25px
+    border-right: 2px solid $grey
+    border-bottom: 2px solid $grey
+    border-left: 2px solid $grey
+    box-shadow: 0px 4px 0px 0px $grey-light-alt
+
+  .tooltip
+    position: relative
+    background: $black
+    border-radius: 5px
+    padding: 30px
+    margin-bottom: 25px
+
+    &:after
+      top: 100%
+      left: 85%
+      border: solid transparent
+      content: " "
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-color: rgba(66, 66, 66, 0)
+      border-top-color: #424242
+      border-width: 15px
+      margin-left: -15px
+
+    p 
+      color: $white
+      text-align: center
+      margin-bottom: 0
+
+
+  .progress-bar-outer
+    height: 24px
+    border: 2px solid $grey
+    background: $grey-light
+
+  .progress-bar-inner
+    width: 75%
+    height: 24px
+    background: $red
+
+  input[type="text"]
+    display: inline-block
+    width: 189px
+    background: $grey-light
+    font-weight: 700
+    font-family: $font-primary
+    font-size: $large
+    color: $text-secondary
+    text-decoration: none
+    border: 2px solid $grey 
+    border-radius: 5px
+    padding: 15px
+    margin-bottom: .3em
+    line-height: 1em
+
+    &:focus
+      outline: none
+      background: darken($grey-light, 1%)
+
+  .why 
+    p 
+      margin-bottom: 0
+

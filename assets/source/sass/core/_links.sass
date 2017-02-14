@@ -1,0 +1,12 @@
+
+/* ==|== links ======================================== */
+
+a
+  text-decoration: none
+  color: $blue
+  @include transition(all .2s);
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+  &:hover
+    text-decoration: underline 
+    color: darken($blue, 20%)

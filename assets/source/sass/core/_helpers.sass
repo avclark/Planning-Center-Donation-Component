@@ -1,0 +1,110 @@
+//------------------------------------------------------------------------------
+
+  Helper Styles
+
+  ------------------------------------------------------------------------------
+
+.ir
+  display: block
+  border: 0
+  text-indent: -999em
+  overflow: hidden
+  background-color: transparent
+  background-repeat: no-repeat
+  text-align: left
+  direction: ltr
+  *line-height: 0
+
+.ir br
+  display: none
+
+.hidden
+  display: none !important
+  visibility: hidden
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus
+  clip: auto
+  height: auto
+  margin: 0
+  overflow: visible
+  position: static
+  width: auto
+
+.invisible
+  visibility: hidden
+
+.clearfix:before, .clearfix:after
+  content: ""
+  display: table
+
+.clearfix:after
+  clear: both
+
+.clearfix
+  *zoom: 1
+
+.left
+  float: left
+
+.right
+  float: right
+
+.row
+  display: block 
+  @include clearfix
+
+
+.align-center
+  text-align: center
+
+.vertical-center
+  height: 100%
+
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+    margin-right: -0.25em
+
+  div
+    display: inline-block
+    vertical-align: middle
+    width: auto
+
+.no-border
+  border: none !important
+
+.uppercase
+  text-transform: uppercase
+
+.ss-icon
+  vertical-align: middle
+
+.ss-social
+  font-weight: 400 !important
+
+.no-padding
+  padding: 0 !important
+
+.text-left
+  text-align: left !important
+
+.text-right 
+  text-align: right !important
+
+.text-center
+  text-align: center !important
+
+.text-justify
+  text-align: justify !important
